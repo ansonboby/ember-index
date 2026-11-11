@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(251, 146, 60, 0.08), transparent),
+    radial-gradient(900px 500px at 10% 110%, rgba(56, 189, 248, 0.06), transparent),
+    #05070f;
+}
+
+.tabbtn {
+  @apply px-3.5 py-2 rounded-lg text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors;
+}
+.tabbtn-active {
+  @apply bg-orange-500/15 text-orange-300 ring-1 ring-orange-500/30;
+}
+.chip {
+  @apply px-3 py-1.5 rounded-full text-xs font-medium border border-slate-700 bg-slate-900/70 text-slate-300 hover:border-orange-500/50 hover:text-orange-200 transition-colors cursor-pointer;
+}
+.chip-active {
+  @apply bg-orange-500/20 border-orange-500/60 text-orange-200;
+}
+.card {
+  @apply rounded-xl border border-slate-800 bg-slate-900/60 p-4;
+}
+.cite {
+  @apply text-[10px] uppercase tracking-wide text-sky-400/80;
+}
