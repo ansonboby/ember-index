@@ -35,9 +35,11 @@ export default function AboutView({ investigations }: { investigations: Investig
             those experiments as upcoming, and mark the gap rather than pretending it away.
           </li>
           <li>
-            Attributes are hand-curated and every one is traceable to its PSI record. The verification
-            pass (field-by-field confirmation on psi.nasa.gov) is in progress — unverified entries are
-            marked in the dataset.
+            Attributes are hand-curated and <span className="text-emerald-400">verified against the PSI
+            database record-by-record via its public API (Nov 2026)</span> — every completed
+            investigation cites its PSI accession and DOI, its PI, and its flight hardware as listed in
+            the PSI record. Test-matrix-level details (exact O₂/flow matrices) live in access-restricted
+            PSI files; numeric bounds not stated in the record text remain flagged as approximate.
           </li>
         </ul>
       </section>

@@ -44,12 +44,14 @@ AI_MODEL=gpt-4o-mini
 ## Data provenance
 
 All data comes from NASA's open **Physical Science Informatics (PSI) database**
-(https://psi.nasa.gov) and the NASA Task Book. The attribute dataset is hand-curated in
-`src/data/investigations.ts`; every attribute field is traceable to its PSI investigation
-page, and fields not yet verified are marked `unverified` in the source. Investigations
-covered: BASS, BASS-II, Saffire-I/II/III, SAME, SAME-R, FLEX, FLEX-2, CFI/CFI-G, BRE,
-SPICE, SLICE, E-FIELD Flames, DAFT, DAFT-2 — with LUCI and FM² referenced as future
-partial-gravity datasets.
+(https://psi.nasa.gov) and the NASA Task Book. Every completed investigation in the dataset
+cites its verified **PSI accession and DOI** (e.g. BASS → PSI-26, DOI 10.60555/58h4-dy80),
+pulled and cross-checked programmatically against PSI's public search/record API
+(`/geode-py/ws/repo/...`), including PI names and flight hardware as listed in the records.
+Numeric test-matrix bounds not stated in the record text remain flagged as approximate in
+`src/data/investigations.ts`. Investigations covered: BASS, BASS-II, Saffire-I/II/III, SAME,
+SAME-R, FLEX, FLEX-2, CFI, CFI-G, BRE, SPICE, SLICE, E-FIELD Flames, DAFT/DAFT-2 — with LUCI
+and FM² referenced as future partial-gravity datasets (verified absent from PSI as of Nov 2026).
 
 **Honesty note:** the ranking engine and simulator rules are maps of published evidence,
 clearly labeled as illustrative where they extrapolate. They are not a validated

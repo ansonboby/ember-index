@@ -9,13 +9,13 @@
 
 ## 0. Manual checklist (only you can do these)
 
-- [ ] Team registered on spaceappschallenge.org; "Flame in Freefall" selected as the challenge
-- [ ] Confirm the platform's submission window/deadline for your region
-- [ ] Repo pushed to GitHub → put URL in `[REPO_URL]`
-- [ ] App deployed (Vercel) → put URL in `[LIVE_URL]`
-- [ ] Record the 3-min demo using `VIDEO-SCRIPT.md` → upload to YouTube/Vimeo (public) → put URL in `[VIDEO_URL]`
-- [ ] Real LLM key in `.env` if you want Ask-the-SI live in the demo (app works without it)
-- [ ] Data verification pass: open each PSI investigation page, confirm every attribute, fill exact PSI IDs in §5
+- [x] Team registered on spaceappschallenge.org; "Flame in Freefall" selected as the challenge — *confirm your region's deadline*
+- [x] Repo pushed to GitHub → https://github.com/ansonboby/ember-index
+- [x] App deployed → https://ember-index.vercel.app
+- [x] PSI verification pass (record-level: IDs, DOIs, PIs, hardware, objectives)
+- [ ] Record the 3-min demo using `VIDEO-SCRIPT.md` → upload to YouTube/Vimeo (public) → paste URL into §6
+- [ ] Real LLM key in `.env` (Vercel env vars) if you want Ask-the-SI live in the demo (app works without it)
+- [ ] Request PSI workspace access to verify test-matrix-level O₂/flow values (access-restricted files)
 - [ ] Paste §1–§8 into the project form; add team members in the platform
 
 ## 1. Project Title
@@ -129,11 +129,16 @@ not a validated combustion model.
 All data is NASA open data from the Physical Sciences division:
 
 - **NASA Physical Science Informatics (PSI) database** — https://psi.nasa.gov
-  - Investigations used: BASS, BASS-II, Saffire-I, Saffire-II, Saffire-III, SAME, SAME-R,
-    FLEX, FLEX-2, Cool Flames Investigation (CFI, CFI-G), Burning Rate Emulator (BRE,
-    ACME), SPICE, SLICE, E-FIELD Flames (ACME), DAFT, DAFT-2; LUCI and FM² referenced as
-    future partial-gravity data.
-  - `[FILL: exact PSI investigation page IDs, e.g. https://psi.nasa.gov/physci/repo/data/investigations/PSI-### — one per investigation, during the verification pass]`
+  - Investigations used (PSI accession · DOI, all verified against PSI records via its API):
+    BASS (PSI-26 · 10.60555/58h4-dy80), BASS-II (PSI-25 · 10.60555/4qc4-de67),
+    Saffire-I (PSI-98 · 10.60555/0t15-1z43), Saffire-II (PSI-99 · 10.60555/2chp-m469),
+    Saffire-III (PSI-100 · 10.60555/040q-4h36), SAME (PSI-102 · 10.60555/gd4k-8h62),
+    SAME-R (PSI-101 · 10.60555/2np7-jv14), FLEX (PSI-69 · 10.60555/mbq8-0451),
+    FLEX-2 (PSI-68 · 10.60555/byp8-h018), CFI (PSI-39 · 10.60555/m6pj-a914),
+    CFI-G (PSI-159 · 10.60555/cyt1-kh64), BRE (PSI-20 · 10.60555/vb93-3y72),
+    SPICE (PSI-107 · 10.60555/9kbh-e962), SLICE (PSI-106 · 10.60555/pm12-rg61),
+    E-FIELD Flames (PSI-22 · 10.60555/se5a-8c73), DAFT/DAFT-2 (PSI-47 · 10.60555/ztgj-d202).
+  - LUCI and FM² referenced as future partial-gravity data (verified absent from PSI as of Nov 2026).
 - **NASA Task Book** — https://taskbook.nasa.gov (project reports used to cross-check
   objectives and hardware descriptions)
 - **NASA BPS data portal** — https://science.nasa.gov/biological-physical/data/
@@ -143,9 +148,9 @@ All data is NASA open data from the Physical Sciences division:
 
 | Item | URL |
 |---|---|
-| Project repository | `[FILL: REPO_URL]` |
-| Live application | `[FILL: LIVE_URL]` |
-| Demo video (≤3 min) | `[FILL: VIDEO_URL]` |
+| Project repository | https://github.com/ansonboby/ember-index |
+| Live application | https://ember-index.vercel.app |
+| Demo video (≤3 min) | `[FILL: VIDEO_URL — record using VIDEO-SCRIPT.md]` |
 | Data provenance & verification method | `REPO_URL/README.md` (§ Data provenance) |
 | Project strategy doc | `REPO_URL/STRATEGY.md` |
 

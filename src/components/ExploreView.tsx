@@ -79,7 +79,7 @@ export default function ExploreView({ investigations }: { investigations: Invest
                 </div>
                 {inv.note && <p className="text-xs text-amber-400/80">⚠ {inv.note}</p>}
                 <p className="text-xs text-slate-500">
-                  Source: NASA PSI{inv.psiId ? ` — investigation ${inv.psiId}` : " — PSI ID pending verification"}
+                  Source: NASA PSI{inv.psiId ? ` — investigation ${inv.psiId}` : " — not yet in PSI (upcoming)"}
                   {inv.psiId && (
                     <>
                       {" · "}
@@ -89,6 +89,14 @@ export default function ExploreView({ investigations }: { investigations: Invest
                         target="_blank"
                       >
                         open record
+                      </a>
+                    </>
+                  )}
+                  {inv.doi && (
+                    <>
+                      {" · "}
+                      <a className="text-sky-400 underline" href={`https://doi.org/${inv.doi}`} target="_blank">
+                        DOI {inv.doi}
                       </a>
                     </>
                   )}
