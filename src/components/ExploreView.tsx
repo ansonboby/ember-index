@@ -44,7 +44,20 @@ export default function ExploreView({ investigations }: { investigations: Invest
 
       <div className="grid md:grid-cols-2 gap-3">
         {list.map((inv) => (
-          <article key={inv.id} className="card cursor-pointer hover:border-orange-500/40 transition-colors" onClick={() => setOpen(open === inv.id ? null : inv.id)}>
+          <article
+            key={inv.id}
+            className="card cursor-pointer hover:border-orange-500/40 transition-colors"
+            role="button"
+            tabIndex={0}
+            aria-expanded={open === inv.id}
+            onClick={() => setOpen(open === inv.id ? null : inv.id)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setOpen(open === inv.id ? null : inv.id);
+              }
+            }}
+          >
             <div className="flex items-baseline gap-2 flex-wrap">
               <h3 className="font-semibold text-slate-100">{inv.name}</h3>
               <span className="text-xs text-slate-500">{inv.years}</span>

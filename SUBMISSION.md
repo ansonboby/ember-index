@@ -13,7 +13,8 @@
 - [x] Repo pushed to GitHub → https://github.com/ansonboby/ember-index
 - [x] App deployed → https://ember-index.vercel.app
 - [x] PSI verification pass (record-level: IDs, DOIs, PIs, hardware, objectives)
-- [ ] Record the 3-min demo using `VIDEO-SCRIPT.md` → upload to YouTube/Vimeo (public) → paste URL into §6
+- [x] Fallback demo video produced: `demo/demo-final.mp4` (1:38, captioned, in repo)
+- [ ] Upload `demo/demo-final.mp4` to YouTube/Vimeo (public, unlisted is fine) → paste URL into §6 — or record your own voice-over take using `VIDEO-SCRIPT.md` first
 - [ ] Real LLM key in `.env` (Vercel env vars) if you want Ask-the-SI live in the demo (app works without it)
 - [ ] Request PSI workspace access to verify test-matrix-level O₂/flow values (access-restricted files)
 - [ ] Paste §1–§8 into the project form; add team members in the platform
@@ -150,14 +151,17 @@ All data is NASA open data from the Physical Sciences division:
 |---|---|
 | Project repository | https://github.com/ansonboby/ember-index |
 | Live application | https://ember-index.vercel.app |
-| Demo video (≤3 min) | `[FILL: VIDEO_URL — record using VIDEO-SCRIPT.md]` |
+| Demo video (≤3 min) | `[FILL: VIDEO_URL — upload demo/demo-final.mp4 from the repo to YouTube/Vimeo, public]` |
 | Data provenance & verification method | `REPO_URL/README.md` (§ Data provenance) |
 | Project strategy doc | `REPO_URL/STRATEGY.md` |
 
 ## 7. Demo Video
 
 - Length: ≤3:00 (Space Apps requirement for Global judging), public link, captions on.
-- Script, shot list and pre-seeded demo state: see `VIDEO-SCRIPT.md`.
+- **Finished fallback cut: `demo/demo-final.mp4`** (1:38, 1080p, caption overlays beat-synced to the
+  demo, freeze-frame end card with repo/live URLs, recorded from the live app with visible cursor).
+- Script, shot list and pre-seeded demo state: see `VIDEO-SCRIPT.md` — use it to record a
+  voice-over take; the captions in the fallback cut follow the same beats.
 
 ## 8. Project Tags
 

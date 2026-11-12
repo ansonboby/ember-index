@@ -41,6 +41,14 @@ AI_BASE_URL=https://api.openai.com/v1/chat/completions
 AI_MODEL=gpt-4o-mini
 ```
 
+## Demo video
+
+`demo/demo-final.mp4` — a 1:38 captioned walkthrough of all six tabs, recorded from the
+live app (visible cursor), with a freeze-frame end card. Reproducible end-to-end:
+`scripts/record-demo.sh` drives the scripted beats with the agent-browser CLI
+and logs their timestamps; `scripts/assemble-demo.py` overlays beat-synced captions and the
+end card with ffmpeg. `VIDEO-SCRIPT.md` is the 3-minute voice-over script for a human take.
+
 ## Data provenance
 
 All data comes from NASA's open **Physical Science Informatics (PSI) database**
